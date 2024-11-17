@@ -1,3 +1,4 @@
+
 def fibonacci_iteration(number)
   array = [0,1,1]
 for i in 2..number do
@@ -13,16 +14,10 @@ end
 
 def fibonacci_recursion(n)
  puts 'This was printed recursively'
- arr = [0,1,1,2]
- if 
+# base cases 0 and 1
+return [0] if n == 0
+return [0, 1] if n == 1
 
-
- else
-  array = fibonacci_recursion(n -1)
-arr << array[-1] + array[-2]
-end
-
-
-
-def merge_sort()
+array = fibonacci_recursion(n - 1)
+array << array[-2] + array[-1]
 end
